@@ -2,20 +2,16 @@
 <html lang="zh-CN">
   <head>
     <meta charset="UTF-8" />
-    <!-- 关键修改：禁止用户缩放，适配 iPhone 屏幕 -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" />
     
     <title>StylePilot</title>
     
-    <!-- iOS PWA 专属设置 -->
+    <!-- iOS PWA Settings -->
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
     <meta name="apple-mobile-web-app-title" content="StylePilot">
     
-    <!-- App 图标 -->
     <link rel="apple-touch-icon" href="https://api.dicebear.com/7.x/adventurer-neutral/svg?seed=icon&backgroundColor=FF90BC">
-
-    <!-- 字体 -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@400;500;800&family=Quicksand:wght@500;700&display=swap" rel="stylesheet">
@@ -77,7 +73,7 @@
 </head>
   <body>
     <div id="root"></div>
-    <!-- Vite 会处理这个入口文件 -->
-    <script type="module" src="/index.tsx"></script>
+    <!-- 关键修改：使用 ./index.tsx 相对路径，并移除 importmap -->
+    <script type="module" src="./index.tsx"></script>
   </body>
 </html>
