@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" />
+    <title>StylePilot</title>
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <link rel="apple-touch-icon" href="https://api.dicebear.com/7.x/adventurer-neutral/svg?seed=icon&backgroundColor=FF90BC">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@400;500;800&family=Quicksand:wght@500;700&display=swap" rel="stylesheet">
+    <style>
+      :root {
+        --primary: #FF90BC;
+        --primary-dark: #FF6699;
+        --secondary: #A0C4FF;
+        --accent: #FFC6FF;
+        --background: #FFF5F7;
+        --surface: #ffffff;
+        --text-main: #6D5D6E;
+        --text-sub: #9E8FA5;
+        --border: #FDE2E4;
+        --success: #88D8B0;
+      }
+      * { box-sizing: border-box; -webkit-tap-highlight-color: transparent; }
+      body {
+        margin: 0; padding: 0;
+        font-family: 'Quicksand', 'M PLUS Rounded 1c', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+        background-color: var(--background);
+        color: var(--text-main);
+        height: 100vh; width: 100vw;
+        overflow: hidden;
+        overscroll-behavior-y: none; 
+      }
+      #root { height: 100%; width: 100%; display: flex; justify-content: center; }
+      ::-webkit-scrollbar { width: 0px; background: transparent; }
+    </style>
+  <script type="importmap">
+{
+  "imports": {
+    "react": "https://esm.sh/react@^19.2.3",
+    "react-dom/": "https://esm.sh/react-dom@^19.2.3/",
+    "react/": "https://esm.sh/react@^19.2.3/",
+    "vite": "https://esm.sh/vite@^7.2.7",
+    "@vitejs/plugin-react": "https://esm.sh/@vitejs/plugin-react@^5.1.2"
+  }
+}
+</script>
+</head>
+  <body>
+    <div id="root"></div>
+    <!-- 指向新的文件名 main.tsx -->
+    <script type="module" src="/main.tsx"></script>
+  </body>
+</html>
